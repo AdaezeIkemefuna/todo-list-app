@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background: slateblue;
+    background: linear-gradient(139deg, #03ddffcb 0%, #ff0381b6 90%);
+}
+
+.container{
+    position: relative;
+    width: 80%;
+    padding:10px;
+    margin: auto;
+}
+
+.addTask{
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+}
+.addTask > input[type="text"]{
+    width:90%;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background: transparent ;
+    padding: 20px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border-bottom: 2px solid gray;
+}
+
+
+.addTask > button {
+    
+    width: 50px;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    background: gray;
+    border: 2px solid crimson;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+ol{
+    margin:30px;
+    list-style: none;
+}
+.Completed, .notCompleted{
+    padding: 20px;
+    margin-bottom: 5px 0;
+}
+
+h3{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-family: serif;
+    font-size: 1.3rem;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+ol li{
+    width: 100%;
+    padding: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background: #eb4034;
+    font-size: 20px;
+    counter-increment: my-counter;
+    border-radius: 5px;
+}
+
+ol li > button{
+    float: right;
+    margin-left: 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+ol.Completed li{
+    background: rgb(8, 197, 8);
+}
+
+ol li::before{
+    content: counter(my-counter);
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background: rgb(64, 27, 73);
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-right: 0.5rem;
+    color: #fff;
+}
