@@ -7,8 +7,9 @@
 body{
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
-    background: slateblue;
-    background: linear-gradient(139deg, #3c97a5cb 0%, #ce0d6eb6 90%);
+    background: black;
+    
+    
 }
 
 .container{
@@ -34,6 +35,8 @@ body{
     font-size: 1rem;
     margin-right: 10px;
     border-bottom: 2px solid gray;
+    color: white;
+    caret-color: white;
 }
 
 
@@ -73,7 +76,7 @@ ol li{
     padding: 18px;
     margin-top: 20px;
     margin-bottom: 10px;
-    background: #eb4034;
+    background: darkred;
     font-size: 20px;
     counter-increment: my-counter;
     border-radius: 5px;
@@ -90,7 +93,7 @@ ol li > button{
 }
 
 ol.Completed li{
-    background: rgb(8, 197, 8);
+    background: darkgreen;
 }
 
 ol li::before{

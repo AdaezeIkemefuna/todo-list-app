@@ -34,7 +34,7 @@ function addList(e){
         const parent = this.parentNode;
         parent.remove();
         completed.appendChild(parent);
-        delBtn.style.display = "none";
+        checkBtn.style.display = "none";
     })
 
     delBtn.addEventListener("click", function () {
